@@ -1,0 +1,47 @@
+<head>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+      <div class="container">
+      <ul class="menu">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Recommendations</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </div>
+    <h1>Phone: <strong>760-613-7293</strong></h1>
+    <h1>Email: <strong>jacobzeis@sbcglobal.net</strong></h1>
+  <div class="flex-center">
+  <a href="https://github.com/JacobZeis1"><i class="fa fa-github fa-4x icon-3d"></i></a>
+   <a href="https://www.instagram.com/jacob.zeis/"><i class="fa fa-instagram fa-4x icon-3d"></i></a>
+</div>
+
+  <script type="text/javascript">
+      function menu(){
+      var menu = document.querySelector(".menu");
+      var links = document.querySelector(".links");
+
+
+      menu.addEventListener("click",function(e){
+        e.preventDefault();
+        if(!(this.classList.contains('active_menu'))){
+          this.classList.toggle("active_menu");
+          links.classList.add("active_links");
+        } else {
+          this.classList.remove("active_menu");
+          links.classList.remove("active_links");
+        }
+      });
+    }
+    menu();
+    </script>
+</body>
+
+

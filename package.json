@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "sass": "^1.25.0",
+    "scss": "^0.2.4",
+    "webpack": "^4.41.5",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.10"
+  }
+}

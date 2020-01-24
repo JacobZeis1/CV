@@ -1,0 +1,93 @@
+<main>
+  <head>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">import $ from "jquery";</script>
+  </head>
+
+  <body>
+    <div class="container">
+      <ul class="menu">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Recommendations</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </div>
+    <header class="header">
+      <h1 class="glitched">Welcome</h1>
+    </header>
+
+  <div class="big-contain">
+    <div class="card-container">
+    <div class="card"><a href="http://www.my-ligne.com/" target="_blank">
+        <div class="card--display"><i class="material-icons">First Product</i>
+          <h2>Fashion Website</h2>
+        </div>
+        <div class="card--hover">
+          <h2>My Ligne</h2>
+          <p>With no prior JS or full stack development experience, I was able to play the crucial “xman” role in my team and build core features for our website. This includes a fully functional globe-map on the homepage. I was also able to successfully execute every assignment that our lead designer gave me by jumping into foriegn territory and reworking APIs to fit our needs.</p>
+          <p class="link">Click to see project</p>
+        </div></a>
+      <div class="card--border"></div>
+    </div>
+  </div>
+  <div class="card-container">
+    <div class="card"><a href="https://www.lewagon.com/" target="_blank">
+        <div class="card--display"><i class="material-icons">Le Wagon</i>
+          <h2>Coding bootcamp</h2>
+        </div>
+        <div class="card--hover">
+          <h2>World Wide Web</h2>
+          <p>A 9-week fullstack coding bootcamp where we coded for around 6 hours per day. I was the youngest student there by half a decade but made lifelong friends and bonds. During the bootcamp I was famed for being the person to explore new paths than just the ones taught to us. This influenced everyone around me to do the same, which ultimately changed the course of our final projects. </p>
+          <p class="link">Click to see bootcamp</p>
+        </div></a>
+      <div class="card--border"></div>
+    </div>
+  </div>
+  <div class="card-container">
+    <div class="card"><a href="https://en.wikipedia.org/wiki/Guilin" target="_blank">
+        <div class="card--display"><i class="material-icons">Chinese</i>
+          <h2>I can speak it</h2>
+        </div>
+        <div class="card--hover">
+          <h2>China</h2>
+          <p>While studying abroad in Guilin, China, I was able to complete HSK 4 (B2 level) in the short span of 5 months. While I did study a fair amount, this was only accomplished by fully utilizing the given resources around me and actively seeking conversation with locals. Through this, the pronunciation and tones came natural to me and the grammar points seemed like simple math equations. </p>
+          <p class="link">Click to see Guilin</p>
+        </div></a>
+      <div class="card--border"></div>
+    </div>
+  </div>
+</div>
+  </body>
+  <!-- welcome glitch logo -->
+    <script type="text/javascript">
+
+      $("header").append("<div class='glitch-window'></div>");
+      //fill div with clone of real header
+      $( "h1.glitched" ).clone().appendTo( ".glitch-window" );
+    </script>
+    <!-- ham menu -->
+    <script type="text/javascript">
+      function menu(){
+      var menu = document.querySelector(".menu");
+      var links = document.querySelector(".links");
+
+
+      menu.addEventListener("click",function(e){
+        e.preventDefault();
+        if(!(this.classList.contains('active_menu'))){
+          this.classList.toggle("active_menu");
+          links.classList.add("active_links");
+        } else {
+          this.classList.remove("active_menu");
+          links.classList.remove("active_links");
+        }
+      });
+    }
+    menu();
+    </script>
+</main>
