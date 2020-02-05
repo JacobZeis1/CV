@@ -8,5 +8,8 @@
   },
   "devDependencies": {
     "webpack-cli": "^3.3.10"
-  }
+  },
+  "scripts": {
+    "start": "webpack-dev-server --hot"
+}
 }
