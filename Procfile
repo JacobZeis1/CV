@@ -1,1 +1,1 @@
-webpack-dev-server
+web: node app.js
