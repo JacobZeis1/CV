@@ -1,113 +1,39 @@
-<main>
-  <head>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js">import $ from "jquery";</script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  </head>
+<head>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
+</head>
 
-  <body>
-  <div class="big-contain">
-    <div class="card-container">
-    <div class="card">
-        <div class="card--display"><i class="material-icons">Team Project</i>
-          <h2>Fashion Website</h2>
-          <img class="craftin" src="ligne.png" alt="" width="370" height="210">
-        </div>
-        <div class="card--hover">
-          <h2>My Ligne</h2>
-          <p>A team of 3 others and I had two weeks to fully plan and build this webapp. With only a few weeks of prior JS and full stack development experience, I was able to play a crucial role in my team and build core features for our website. This includes a fully functional globe-map on the homepage.
-          </p>
-          <p><strong>Tech used:</strong> Ruby, HTML, CSS, JavaScript | Sass, Bootstrap, jQuery</p>
-          <p class="link">
-          <li>
-            <a href="http://www.my-ligne.com/" target="_blank"><i class="fas fa-globe"></i>Website</a></li>
-            <li><a class="btn btn-ghost" href="https://github.com/bingwanli/ligne" target="_blank"><i class="fab fa-github"></i>Github repo</a></li></p>
-        </div>
-      <div class="card--border"></div>
-    </div>
-
-    <div class="card">
-        <div class="card--display"><i class="material-icons">Accessibility plugin for</i>
-          <h1 class='blind'>blind gamers</h1>
-          <img class="craftin" src="craft.png">
-        </div>
-        <div class="card--hover">
-          <h2>Background:</h2>
-          <p>A childhood friend of mine in his recent years was diagnosed with a rare disease that impaired most of his vision. He is still working out what he can and cannot do, but he continues to surprise everyone around him with what he can accomplish. That is until we tried playing Minecraft together. He struggled to read what was in his inventory and craft items he had previously known. Minecraft's native accessibility features did not aid his problems, which was suprising and made me mad. I decided to learn java and within a few hours I had made a plugin that read out every item he clicked on. His diamonds continue to stack up.</p>
-          <p><strong>Tech used:</strong> Java</p>
-          <p class="link"><li>
-            <a href="" target="_blank"><i class="fas fa-globe"></i>Website</a></li>
-            <li><a class="btn btn-ghost" href="#"><i class="fab fa-github"></i>Github repo</a></li></p>
-        </div>
-      <div class="card--border"></div>
-    </div>
-
-    <div class="card" id="last">
-          <div class="card--display"><i class="material-icons">Instagram bot</i>
-            <h2>to help manage relationships</h2>
-            <img class="craftin" src="bot.png" width="370"  height="240">
-          </div>
-          <div class="card--hover">
-            <h2>Fun side project(kinda weird)</h2>
-            <p>Login and choose a person you want the bot to pay attention to. Whenever the selected user posts, this bot will automatically like the post and comment something from your array of words.</p>
-            <p><strong>Tech used:</strong> Python(tkinter/selenium)</p>
-            <input type="checkbox" id="toggle">
-        <label for="toggle">Open Video Demo</label>
-        <dialog >
-          <p>
-        <iframe width="620" height="415"
-        src="https://www.youtube.com/embed/JEgycxj0nW0">
-        </iframe>
-          </p>
-        </dialog>
-          </div>
-        <div class="card--border"></div>
-    </div>
-
-  </div>
-</div>
-
-  </body>
-  <footer>
-    <div class="footer">
-  <div class="footer-links">
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-  </div>
-  <div class="footer-copyright">
-    This footer is made with <i class="fas fa-heart"></i> at Le Wagon
-  </div>
-</div>
-
-  </footer>
-  <!-- welcome glitch logo -->
-    <script type="text/javascript">
-
-      $("header").append("<div class='glitch-window'></div>");
-      //fill div with clone of real header
-      $( "h1.glitched" ).clone().appendTo( ".glitch-window" );
-    </script>
-    <!-- ham menu -->
-    <script type="text/javascript">
-      function menu(){
-      var menu = document.querySelector(".menu");
-      var links = document.querySelector(".links");
+<body>
+  <h1>Jacob Zeis</h1>
+  <h2 id="quote">Full stack web developer seeking learning opportunities</h2>
+  <ul class="pgbuttons">
+    <h2><a href="hom.html">Portfolio</a></h2>
+    <h2>Contact</h2>
+    <h2><a href="./Zeisdevres.pdf" target="_blank">Resume</a></h2>
+  </ul>
 
 
-      menu.addEventListener("click"anywhere ,function(e){
-        e.preventDefault();
-        if(!(this.classList.contains('active_menu'))){
-          this.classList.toggle("active_menu");
-          links.classList.add("active_links");
-        } else {
-          this.classList.remove("active_menu");
-          links.classList.remove("active_links");
-        }
-      });
+</body>
+
+<script>
+
+  var tl = gsap.timeline(),
+
+  split = new SplitText("#quote", {type:"words,chars"}),
+
+  words = split.words; //an array of all the divs that wrap each character
+
+  gsap.set("#quote", {perspective: 400});
+
+  tl.to(words, {
+    duration: 1.5,
+    "--weight": "300",
+    ease: "none",
+    color: "hsl(+=0, +=70%, +=20%)",
+    stagger: {
+      each: 0.4,
     }
-    menu();
-    </script>
-</main>
+  })
+
+</script>
