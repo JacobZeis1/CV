@@ -1,0 +1,51 @@
+body {
+  background-image: url("back.JPG");
+  background-repeat: no-repeat;
+  background-size: 1300px 800px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-size: 57px;
+  margin-top: 190px;
+  color: white;
+  text-decoration: underline;
+  text-shadow: #585858 1px 0 10px;
+}
+
+.pgbuttons {
+  margin-top: 220px;
+  font-size: 37px;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  text-shadow: black 1px 0 10px;
+}
+
+@font-face {
+  font-family: 'Marvin Visions Variable';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/MarvinVisionsTrial-Variable.ttf");
+}
+
+#quote {
+  --weight: 10;
+  font-size: 37;
+  font-weight: 170;
+  line-height: 0.8;
+  margin: 0;
+  text-align: center;
+}
+
+#quote > * {
+  color: hsl(347, 7%, 29%);
+  text-shadow: black 1px 0 10px;
+}
+.grid {
+  grid-template-columns: repeat(3, 1fr);
+}
