@@ -1,7 +1,7 @@
 body {
   background-image: url("back.JPG");
   background-repeat: no-repeat;
-  background-size: 1300px 800px;
+  background-size: 100vw 100vh;
   font-family: 'Raleway', sans-serif;
   text-align: center;
 }
