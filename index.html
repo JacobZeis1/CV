@@ -1,7 +1,7 @@
 <head>
   <link rel="stylesheet" href="index.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-  <script type="module" src="./script/minified/SplitText.min.js"></script>
+  <script type="module" src="script/esm/SplitText.js"></script>
 </head>
 
 <body>
@@ -17,6 +17,7 @@
 </body>
 
 <script>
+  import { SplitText } from 'script/esm/SplitText.js'
   let tl = gsap.timeline(),
 
   split = new SplitText("#quote", {type:"words,chars"}),
