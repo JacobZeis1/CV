@@ -1,14 +1,26 @@
 body {
-  background-image: url("back.JPG");
+  background: #585858;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
+#name {
+  color: #C5AC9A;
+  text-align: left;
+  font-family: "New Century Schoolbook", serif;
+}
+
+.intro {
+  position:relative;
+  top: -170px;
+}
+
 a {
   text-decoration: none;
   color: white;
+  padding: 20px;
 }
 
 h1 {
@@ -20,12 +32,16 @@ h1 {
 }
 
 .pgbuttons {
-  margin-top: 220px;
   font-size: 37px;
-  display: flex;
-  justify-content: space-around;
+  /*display: flex;*/
+ /* justify-content: space-around;*/
   color: white;
   text-shadow: black 1px 0 10px;
+  text-align: left;
+}
+
+#butts {
+  top: -110px;
 }
 
 @font-face {
@@ -39,7 +55,7 @@ h1 {
   font-weight: 170;
   line-height: 0.8;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 #quote > * {
@@ -50,7 +66,109 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.superShadow {
+a {
+    border: 4px solid #C5AC9A;
+    color: #C5AC9A;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: auto;
+    padding: 12px 32px 12px 82px;
+    position: relative;
+    text-decoration: none;
+    top: -100px;
+}
+
+a .label,
+a .icon-arrow {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    perspective: 1000;
+}
+
+a .label {
+    display: inline-block;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+a .icon-arrow {
+    fill: #C75741;
+    height: 15px;
+    top: 17px;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1), opacity .4s cubic-bezier(0.86, 0, 0.07, 1);
+    width: 35px;
+}
+
+a .icon-arrow.before {
+    left: 32px;
+    margin-right: 15px;
+    position: absolute;
+    transform-origin: left center;
+}
+
+a .icon-arrow.after {
+    margin-left: 15px;
+    opacity: 0;
+    position: absolute;
+    right: 32px;
+    transform: translateX(75%) scaleX(0.1);
+    transform-origin: right center;
+}
+
+a:hover .label {
+    transform: translateX(-52px);
+}
+
+a:hover .icon-arrow.before {
+    opacity: 0;
+    transform: translateX(-75%) scaleX(0.1);
+}
+
+a:hover .icon-arrow.after {
+    opacity: 1;
+    transform: translateX(0) scaleX(1);
+}
+
+a:active {
+    border-color: #C5AC9A;
+    color: #FD6154;
+}
+
+a:active .icon-arrow {
+    fill: #FD6154;
+}
+
+.footer {
+  background-color: #585858;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links button {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links button:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
+}
+
+
+
+/*.superShadow {
   text-shadow:     0 1px 0 hsl(174,5%,80%),
                      0 2px 0 hsl(174,5%,75%),
                      0 3px 0 hsl(174,5%,70%),
@@ -66,5 +184,5 @@ h1 {
                    0 5px 10px rgba(0,0,0,.2),
                   0 10px 10px rgba(0,0,0,.2),
                   0 20px 20px rgba(0,0,0,.3);
-}
+}*/
 

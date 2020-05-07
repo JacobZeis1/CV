@@ -190,3 +190,20 @@ dialog{
   color: #D23333;
 }
 
+
+#quote {
+  --weight: 10;
+  font-size: 37;
+  font-weight: 170;
+  line-height: 0.8;
+  margin: 0;
+  text-align: center;
+}
+
+#quote > * {
+  color: hsl(347, 7%, 29%);
+  text-shadow: black 1px 0 10px;
+}
+.grid {
+  grid-template-columns: repeat(3, 1fr);
+}

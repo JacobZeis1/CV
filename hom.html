@@ -3,6 +3,9 @@
     <link rel="stylesheet" href="hom.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js">import $ from "jquery";</script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  <script src="script/minified/SplitText.min.js">
+  </script>
   </head>
 
   <body>
@@ -110,4 +113,24 @@
     }
     menu();
     </script>
+
+    <script>
+      let tl = gsap.timeline(),
+
+      split = new SplitText("#quote", {type:"words,chars"}),
+
+      words = split.words; //an array of all the divs that wrap each character
+
+      gsap.set("#quote", {perspective: 400});
+
+      tl.to(words, {
+        duration: 1.5,
+        "--weight": "300",
+        ease: "none",
+        color: "hsl(+=0, +=70%, +=20%)",
+        stagger: {
+          each: 0.4,
+        }
+      })
+</script>
 </main>
