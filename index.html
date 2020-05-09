@@ -1,9 +1,9 @@
 <head>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="./css/index.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
   <script src="script/minified/SplitText.min.js">
   </script>
-<script src="https://use.fontawesome.com/51d236411f.js"></script>
+  <script src="https://kit.fontawesome.com/155635477e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,6 +14,7 @@
 
   <div id="butts">
       <ul>
+
       <h2 class="btn"><a href="hom.html">
       <svg class="icon-arrow before">
           <use xlink:href="#arrow"></use>
@@ -32,15 +33,16 @@
     </symbol>
   </defs>
 </svg></h2>
-        <h2 class="btn"><a href="">Contact</a></h2>
-        <h2 class="btn"><a href="./Zeisdevres.pdf" target="_blank">
-        <svg class="icon-arrow before">
-            <use xlink:href="#arrow"></use>
-        </svg>
-        <span class="label">Resume</span>
-        <svg class="icon-arrow after">
-            <use xlink:href="#arrow"></use>
-        </svg>
+
+    <h2 class="btn">
+      <a href="contact.html">
+      <svg class="icon-arrow before">
+          <use xlink:href="#arrow"></use>
+      </svg>
+      <span class="label">Contact</span>
+      <svg class="icon-arrow after">
+        <use xlink:href="#arrow"></use>
+    </svg>
     </a>
 
     <svg style="display: none;">
@@ -49,8 +51,31 @@
           <title>Arrow</title>
           <path d="M27.172 5L25 2.828 27.828 0 34.9 7.071l-7.07 7.071L25 11.314 27.314 9H0V5h27.172z "/>
         </symbol>
-  </defs>
-</svg></h2>
+      </defs>
+    </svg>
+  </h2>
+
+    <h2 class="btn">
+      <a href="./Zeisdevres.pdf" target="_blank">
+        <svg class="icon-arrow before">
+            <use xlink:href="#arrow"></use>
+        </svg>
+        <span class="label">Resume</span>
+        <svg class="icon-arrow after">
+            <use xlink:href="#arrow"></use>
+        </svg>
+      </a>
+
+          <svg style="display: none;">
+            <defs>
+              <symbol id="arrow" viewBox="0 0 35 15">
+                <title>Arrow</title>
+                <path d="M27.172 5L25 2.828 27.828 0 34.9 7.071l-7.07 7.071L25 11.314 27.314 9H0V5h27.172z "/>
+              </symbol>
+        </defs>
+      </svg>
+    </h2>
+
       </ul>
 
 </div>
@@ -61,11 +86,8 @@
 <footer>
   <div class="footer">
   <div class="footer-links">
-    <button><i class="fab fa-github"></i></button>
-    <button><i class="fab fa-instagram"></i></button>
-    <button><i class="fab fa-facebook"></i></button>
-    <button><i class="fab fa-twitter"></i></button>
-    <button><i class="fab fa-linkedin"></i></button>
+    <button onclick="window.location.href='https://github.com/JacobZeis1/'" ><i class="fab fa-github"></i></button>
+    <button onclick="window.location.href='https://www.instagram.com/jacob.zeis'"/><i class="fab fa-instagram"></i></button>
   </div>
   <div class="footer-copyright">
     Jacob Zeis

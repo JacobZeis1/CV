@@ -1,0 +1,34 @@
+.footer {
+  background-color: #585858;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: #C5AC9A;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links button {
+  border: none;
+  color: #C5AC9A;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links button:hover {
+  opacity: 1;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
