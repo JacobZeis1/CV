@@ -6,10 +6,11 @@ body {
   text-align: center;
 }
 
+
 #name {
   color: #C5AC9A;
   text-align: left;
-  font-family: "New Century Schoolbook", serif;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .intro {
@@ -140,7 +141,7 @@ a:active .icon-arrow {
 }
 
 .footer {
-  bottom: -900px;
+  position: relative;
   background-color: #585858;
   display: flex;
   align-items: center;
