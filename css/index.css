@@ -143,8 +143,9 @@ a:active .icon-arrow {
 }
 
 .footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
+  width: 90%;
   background-color: #585858;
   display: flex;
   align-items: center;
