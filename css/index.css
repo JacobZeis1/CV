@@ -1,17 +1,21 @@
+@font-face {
+  font-family: tallBoi;
+  src: url(reg.ttf);
+}
+
 body {
   min-height: 100%;
   background: #585858;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
-  font-family: 'Raleway', sans-serif;
+  font-family: tallBoi;
   text-align: center;
 }
-
 
 #name {
   color: #C5AC9A;
   text-align: left;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: tallBoi;
 }
 
 .intro {

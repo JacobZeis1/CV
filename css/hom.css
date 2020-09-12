@@ -1,6 +1,6 @@
 @font-face {
   font-family: tallBoi;
-  src: url(tallFont.otf);
+  src: url(reg.ttf);
 }
 
 * {
@@ -20,6 +20,7 @@ li {
 body {
   min-height: 100%;
   font-family: tallBoi;
+  font-weight: 900;
   background: #585858;
   /*//background: #EEF16E;*/
 }
