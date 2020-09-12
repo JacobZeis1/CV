@@ -1,3 +1,8 @@
+@font-face {
+  font-family: tallBoi;
+  src: url(tallFont.otf);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -14,7 +19,7 @@ li {
 
 body {
   min-height: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: tallBoi;
   background: #585858;
   /*//background: #EEF16E;*/
 }
