@@ -14,7 +14,7 @@
     <div>
      <div class="firstboi">
         <h1> Fashion Website </h1>
-        <p>A team of 3 others and I had two weeks to fully plan and build this webapp. With only a few weeks of prior JS and full stack development experience, I was able to play a crucial role in my team and build core features for our website. This includes a fully functional globe-map on the homepage.</p>
+        <p>A team of 3 others and I had two weeks to fully plan and build this webapp. With only a few weeks of prior JS and full stack development experience, I was able to play a crucial role in my team and build core features for our website. Including an interactive globe-map on the homepage.</p>
           <p>Tech used: <strong> Ruby, HTML, CSS, JavaScript | Sass, Bootstrap, jQuery </strong></p>
             <p class="link">
             <li>
@@ -37,10 +37,11 @@
         <p>Click on a flat and it will show you where it is on the map.</p>
           <p>Tech used: <strong> REACT, Google map API </strong></p>
           <p class="link"><li>
-            <a href="" target="_blank"><i class="fas fa-globe"></i>Demo site</a></li>
+            <h2 id="flat-but"><i class="fas fa-globe"></i>Demo Gif</h2></li>
           </p>
       </div>
     </div>
+    <img id="flat-gif" src="./img/flats.gif">
 
   </body>
 
@@ -56,33 +57,21 @@
   </div>
 </footer>
 
-  <!-- welcome glitch logo -->
-    <script type="text/javascript">
+<script type="text/javascript">
+      $.fn.center = function () {
+        this.css("position","absolute");
+        this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
+        this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+        return this;
+      }
 
-      $("header").append("<div class='glitch-window'></div>");
-      //fill div with clone of real header
-      $( "h1.glitched" ).clone().appendTo( ".glitch-window" );
-    </script>
-    <!-- ham menu -->
-    <script type="text/javascript">
-      function menu(){
-      var menu = document.querySelector(".menu");
-      var links = document.querySelector(".links");
-
-
-      menu.addEventListener("click"anywhere ,function(e){
-        e.preventDefault();
-        if(!(this.classList.contains('active_menu'))){
-          this.classList.toggle("active_menu");
-          links.classList.add("active_links");
-        } else {
-          this.classList.remove("active_menu");
-          links.classList.remove("active_links");
-        }
+      $("#flat-but").on("click", function(){
+        $("#flat-gif").fadeIn()
+        setTimeout(function(){
+          $("#flat-but").fadeOut()
+        }, 1000);
       });
-    }
-    menu();
-    </script>
+</script>
 
     <script>
       let tl = gsap.timeline(),

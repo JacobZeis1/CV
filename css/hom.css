@@ -7,6 +7,11 @@ h1 {
   text-decoration: underline;
 }
 
+#home {
+  color: #C5AC9A;
+  text-decoration: underline;
+}
+
 strong {
   color: #C5AC9A;
 }
@@ -54,7 +59,7 @@ header.header h1 {
 
 
 a {
-    color: #C75741;
+    color: #C5AC9A;
     font-size: 24px;
     font-weight: bold;
     line-height: 24px;
@@ -62,8 +67,18 @@ a {
     text-decoration: none;
 }
 
+img {
+  width: 800px;
+  height: 385px;
+}
 
+#flat-gif {
+  display: none;
+}
 
+#flat-but {
+  color: #C5AC9A;
+}
 
 .footer {
   background-color: #585858;
