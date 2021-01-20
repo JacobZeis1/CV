@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Passphrase</title>
+
+  <link rel="stylesheet" href="./css/pass.css">
+</head>
+
+<body>
+  <h1>Type anywhere, the passphrase given to you<h1>
+    <p> or contact me <p>
+
+  <script>
+    const pressed = [];
+    const secretCode = 'jacob';
+
+    window.addEventListener('keyup', (e) => {
+      pressed.push(e.key);
+
+      pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+
+      if(pressed.join('').includes(secretCode)) {
+        window.location.href = "https://www.zeis.dev/index.html";
+      }
+
+        //console.log(pressed);
+    });
+
+  </script>
+</body>
+</html>

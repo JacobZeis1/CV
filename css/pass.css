@@ -1,0 +1,16 @@
+body {
+  min-height: 100%;
+  color: #C75741;
+  font-family: tallBoi;
+  font-weight: 1100;
+  background: #585858;
+  /*//background: #EEF16E;*/
+  text-align: center;
+}
+
+@font-face {
+  font-family: tallBoi;
+  src: url(reg.ttf);
+}
+
+
